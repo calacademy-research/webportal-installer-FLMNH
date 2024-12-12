@@ -3,6 +3,7 @@ SOLR_MIRROR := http://archive.apache.org/dist/lucene/solr
 
 # Use latest available version of Solr 
 export SOLR_VERSION := $(shell curl -s $(SOLR_MIRROR)/ | python3 get_latest_solr_vers.py)
+export SOLR_VERSION = 7.5.0
 
 export SOLR_DIST := solr-$(SOLR_VERSION)
 export TOPDIR := $(shell pwd)
